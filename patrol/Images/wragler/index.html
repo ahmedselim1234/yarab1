@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./car.css" />
+  <title>Jeep</title>
+
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car_main {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 80px;
+  gap: 50px;
+}
+
+.car_image {
+  height: 400px;
+  width: 100%;
+}
+
+.car_image img {
+  width: 100%;
+}
+
+.car {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.car_info {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.car_info .data_boxes {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.car_info .data_boxes .data_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.car_info .data_boxes .data_box span:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.car_info .data_boxes .data_box span:last-child {
+  font-size: 18px;
+}
+
+.car_desc {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.car_desc p {
+  font-size: 18px;
+}
+  </style>
+  
+</head>
+
+<body>
+  <main class="car_main">
+    <div class="car_image">
+      <img src="./4.jpg" alt="car" />
+    </div>
+    <div class="car">
+      <div class="car_info">
+        <h2>Car Information</h2>
+        <div class="data_boxes">
+          <div class="data_box">
+            <span>Name : </span>
+            <span>Renegade</span>
+          </div>
+          <div class="data_box">
+            <span>Color : </span>
+            <span>Black</span>
+          </div>
+          <div class="data_box">
+            <span>Price : </span>
+            <span>12000 $</span>
+          </div>
+          <div class="data_box">
+            <span>Model : </span>
+            <span>2017</span>
+          </div>
+        </div>
+      </div>
+      <div class="car_desc">
+        <h2>Car Description</h2>
+        <p>The Jeep Wrangler is a series of compact and m
+          id-size four-wheel drive off-road SUVs manufactured by Jeep since 1986</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

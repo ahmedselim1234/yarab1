@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+<!-- sameeeh-->
+<section class="sec8"   id="car8" >
+
+    <div class="nav">
+      <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rank"> Global ranking</a></li>
+          <li><a href="#best"> Best Seller</a></li>
+          <li><a href="#spor"> Sports Car</a></li>
+          <li><a href="#links">Company links</a></li>
+          <li><a href="pro.html">Home</a></li>
+      </ul>
+    
+    
+    
+      <div class="slide" >
+    
+    
+    
+        <img   class="imgsa"  src="Images/gen2.jpg" alt="Image 1">
+    </div>
+    <div   class="slide" >
+        <img  class="imgsa"   src="Images/img3 (1).png" alt="Image 2">
+    </div>
+    <div  class="slide" >
+        <img  class="imgsa"   src="Images/b_gen.jpeg" alt="Image 3">
+    </div>
+    
+    
+    
+    <div class="button">
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="logo">
+      <img src="Images/LOGO.png" alt="toyota logo">
+      <h1>TOYOTA</h1>
+    </div>
+    <div class="name"> 
+      
+    </div>
+    <div id="about" class="about">
+    <p>The company was founded by Kiichiro Toyoda in 1937, as a spin-off from his father's company called Toyota Industries, to manufacture automobiles.
+       Three years earlier, in 1934, while still part of Toyota Industries, the company had created its first product, the Type A engine, and its first passenger car in 1936, the Toyota AY.
+       Toyota Motor Corporation also produces vehicles under five brands, including Toyota's Hino, Lexus, Ranz, and Daihatsu. It also owns an estimated 16.66% of Subaru shares, an estimated 5.9% stake in Isuzu, and a 5.5% stake in Mazda, in addition to joint ventures, including two in China (JAC Toyota and Sichuan FAW Toyota) and one in India (Toyota). Kirloskar India) and one in the Czech Republic (TPCA), along with several non-automotive companies.
+       Toyota Motor Corporation is part of the Toyota Group, one of the largest conglomerates in Japan.</p>
+    </div>
+    <div id="rank" class="rank">
+      <h2>Global ranking</h2>
+    </div>
+    <div class="gl_rank">
+      <p>Toyota, previously the world's third-largest automaker behind General Motors and Ford, for the first time in history produced more cars than Ford in 2005, and in 2006 more than General Motors and became the largest automaker in the world.
+           the world since then. With the exception of 2011, when the 2011 Tohoku earthquake and tsunami occurred, it fell to third place behind US General Motors and Germany's Volkswagen Group.</p>
+    </div>
+    <div id="best" class="best">
+      <h2>Best Seller</h2>
+    </div>
+    <div class="car_1">
+      <img src="Images/TOYOTA_COROLLA.jpg" alt="toyota corolla">
+      <p>Toyota Corolla is considered one of the best-selling cars in history. Since its debut in 1966, the Toyota Corolla has sold millions of units worldwide. The Corolla has a reputation as a reliable, economical and easy-to-maintain car, and these qualities have made it a popular choice for many drivers around the world.</p>
+    </div>
+    <div id="spor" class="spor">
+      <h2>Sports Car</h2>
+    </div>
+    <div class="car_2">
+    <img src="Images/Toyota_Supra.jpg" alt="supra car">
+    <pre>Supra It is one of the most famous sports cars produced by Toyota. 
+    It is part of Toyota's high-performance heritage and is very popular among sports car fans.
+    for more about Supra click <a href="supra/index.html"> here</a>
+    </pre>
+    </div>
+    <div id="links" class="links">
+    <h2>Company links</h2>
+    </div>
+    <div class="li_co">
+    <p>Main company link <a href="https://www.toyota.com/">toyota.com</a></p>
+    <p>Company link in Egypt <a href="https://toyota.com.eg/">toyota.com.eg</a></p>
+    </div>
+    <div class="social-icons"></div>
+    </section>
+
+<script>
+
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function prevSlide() {
+    showSlide(slideIndex -= 1);
+}
+
+function nextSlide() {
+    showSlide(slideIndex += 1);
+}
+
+function showSlide(n) {
+    const slides = document.querySelectorAll('.slide');
+    
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    
+    slides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    
+    slides[slideIndex].style.display = 'block';
+}
+</script>
+
+</body>
+</html>

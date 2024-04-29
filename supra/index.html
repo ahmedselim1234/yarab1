@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+  <style>
+    body{
+    background-color:rgb(64, 64, 64) ;
+    color: #d0cccc;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.nav ul{
+    margin-top: 0px;
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    box-shadow: 0px 13px 11px -5px #aaaaaa31;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #5e9ddd;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    margin-top: 40px;
+    font-size: 80px;
+    color: rgb(0,0,25);
+}
+.logo img{
+    width: 250px;
+    height: 200px;
+}
+.about{
+    display: inline-block;
+    height: 90px ;
+    margin-bottom: 200px;
+}
+.about p{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-left: 100px;
+    width: 70%;
+}
+.gens h2{
+    margin-left: 50px;
+    font-size: 40px;
+    color: rgb(0,0,25);
+}
+.gen p{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.gen1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+}
+.gen1 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+}
+.gen1 pre{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 3;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.gen2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+}
+.gen2 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+}
+.gen2 pre{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 3;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.gen3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+}
+.gen3 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+}
+.gen3 pre{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 3;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.best h2{
+    font-size: 40px;
+    color: rgb(0,0,25);
+    margin-left:50px ;
+}
+.test {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+}
+.test img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+}
+.test p{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 2.5;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.spe h2{
+    font-size: 40px;
+    color: rgb(0,0,25);
+    margin-left:50px ;
+}
+table {
+    border: 1px solid black;
+    border-collapse:collapse ;
+    width: 100%;
+}
+caption{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 2.5;
+    font-weight: 600;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+td:hover{
+    background-color: gray;
+    color: #5e9ddd;
+}
+.y_op h2{
+    font-size: 40px;
+    color: rgb(0,0,25);
+    margin-left:50px ;
+}
+.form p{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 2.5;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.form form label{
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 2.5;
+    font-weight: 600;
+    margin-left: 50px;
+}
+input[ type="text area"]{
+width: 350px;
+height: 50px; 
+background-color: rgb(64, 64, 64);
+color: white;
+}
+input[type=submit]{
+    width: 250x ;
+    height: 80px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  </style>
+
+        <title>
+            SUPRA
+        </title>
+        <link rel="stylesheet" href="css/SUPRA.CSS">
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gen"> Car Generations</a></li>
+                <li><a href="#best"> Best Generations</a></li>
+                <li><a href="#spe">specifications mk4</a></li>
+                <li><a href="#opin">Your Opinion</a></li>
+                <li><a href="../ind7.html">Back</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="Images/SUPRA_LOGO.png" alt="supra logo">
+            <h1>SUPRA</h1>
+        </div>
+        <div id="about" class="about">
+            <p>The beginning of the Toyota Supra goes back to 1978 when Toyota launched it as a model of its cars. 
+The Supra had simple beginnings in the world of sports cars, but it quickly became one of the most famous and popular Japanese sports cars in the world.
+Toyota Supra was famous for its excellent performance and attractive design, and it always competed strongly in the medium- and high-performance sports car category.
+It is worth noting that the Supra was very popular in the modified car enthusiast community and was widely supported by a wide range of parts and accessory manufacturers.</p>
+        </div>
+        <div id="gen" class="gens">
+            <h2>Car Generations</h2>
+        </div>
+<div class="gen">
+    <p>
+        The Toyota Supra has seen several different generations since its debut in 1978, and here is an overview of the main generations:
+    </p>
+
+    <div class="gen1">
+        <div class="img1">
+            <img src="Images/gen1.jpg">
+        </div>
+        <pre>*First generation (A40/A50):
+-Production: 1978-1981
+-2.0 liter engines
+-Power ranges from 110 to 123 horsepower
+-Available in hatchback and coupe styles
+</pre></div>
+ <div class="gen2">
+    <div class="img2">
+        <img src="Images/gen2.jpg">
+    </div>
+    <pre>*Second generation (A60):
+-Production: 1981-1986
+-Engines with a capacity of 2.8 liters
+-Power ranges from 145 to 160 horsepower
+-Design and performance improvements</pre></div>
+  <div class="gen3">
+    <div class="img3">
+        <img src="Images/gen3.jpg">
+    </div>
+    <pre>*Third generation (A70):
+-Production: 1986-1993
+-3.0 liter engines
+-Power ranges from 200 to 230 horsepower
+-More dynamic design and powerful performance</pre></div>
+</div>
+    <div id="best" class="best">
+        <h2>Best Generations "Mk4"</h2>
+    </div>
+    <div class="test">
+    <img src="Images/b_gen.jpeg">
+    <p>The Mk4 Supra is considered one of the best generations of the Supra, due to its popularity and people’s love for it, and those who love modification prefer it
+ because it is considered one of the easiest cars to modify.</p>
+</div>
+<div id="spe" class="spe">
+    <h2>specifications MK4</h2>
+</div>
+<div class="table">
+    <table>
+        <caption>specifications mk4</caption>
+            <tr>
+                <td>Number of speeds :</td>
+                <td>6 speed manual</td>
+            </tr>
+            <tr>
+                <td>Top Speed :</td>
+                <td>250 km/h</td>
+            </tr>
+            <tr>
+                <td>Acceleration 0 to 100 km/h :</td>
+                <td>5.1s</td>
+            </tr>
+            <tr>
+                <td>Horsepower :</td>
+                <td> 326 HP / 243 kW / 5600 rpm</td>
+            </tr>
+            <tr>
+                <td>Aspiration :</td>
+                <td>Twin-Turbo (CT20A) + Intercooler</td>
+            </tr>
+            <tr>
+                <td>Number of cylinders :</td>
+                <td>Inline 6</td>
+            </tr>
+    </table>
+</div>
+<div id="opin" class="opin">
+ <div class="y_op"> 
+    <h2>Your Opinion</h2>
+ </div>
+ <div class="form"> 
+    <p>Now you can tell us your fav car and what's your opinion about supra</p>
+    <form>
+        <label for="op"> ewrite your opinion her</label>
+        <input id="op" class="op" type="text area" placeholder="write your opinion here">
+        <input type="submit" value="send">
+    </form>
+    <input type="button" value="back">
+ </div>
+</div>
+    </body>
+</html>
